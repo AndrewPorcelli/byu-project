@@ -9,11 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const {} = require('./controller');
+const { getSchedule } = require('./controller');
 
 // Endpoints
 
-
+app.get('/api/schedule', getSchedule);
 
 // ----------------- listening
 app.listen(4000, console.log('Boogying on port 4000'));

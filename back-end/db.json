@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "game": "BYU @ USF",
+    "time": "Sep 3 2:00pm",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401301009.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 2,
+    "game": "Baylor @ BYU",
+    "time": "Sep 10 8:15pm",
+    "imageURL": "https://images.byub.org/5b7cb290-364d-49d4-8b95-f6f124f172e7/1280x720"
+  },
+  {
+    "id": 3,
+    "game": "BYU @ Oregon",
+    "time": "Sep 17 1:30pm",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401371258.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 4,
+    "game": "Wyoming @ BYU",
+    "time": "Sep 24 TBD",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401415223.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 5,
+    "game": "Utah State @ BYU",
+    "time": "Sep 29 6:00pm",
+    "imageURL": "https://www.houstononthecheap.com/wp-content/uploads/2021/10/BYU-Cougars-vs-Utah-State-Aggies.png"
+  },
+  {
+    "id": 6,
+    "game": "Notre Dame @ BYU",
+    "time": "Oct 8 5:30pm",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401404127.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 7,
+    "game": "Arkansas @ BYU",
+    "time": "Oct 15 TBD",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401403916.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 8,
+    "game": "BYU @ Liberty",
+    "time": "Oct 22 TBD",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/artwork/collections/airings/5fd19985-460e-4dd9-8323-e3244b02bfca/16x9.jpg?timestamp=202204051858&showBadge=true&cb=12&package=ESPN_PLUS"
+  },
+  {
+    "id": 9,
+    "game": "East Carolina @ BYU",
+    "time": "Oct 28 6:00pm",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/400941828.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 10,
+    "game": "BYU @ Boise State",
+    "time": "Nov 5 TBD",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401415250.png?templateId=espn.com.share.1"
+  },
+  {
+    "id": 11,
+    "game": "Utah Tech @ BYU",
+    "time": "Nov 19 1:30pm",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/artwork/16x9.jpg?height=720&width=1280&source=https://artwork.espncdn.com/events/401426165/16x9/1280x720_20220401151509.jpg&cb=12&templateId=espn.core.dtc.large.16x9.1&showBadge=true&package=ESPN_PLUS"
+  },
+  {
+    "id": 10,
+    "game": "BYU @ Stanford",
+    "time": "Nov 26 TBD",
+    "imageURL": "https://s.secure.espncdn.com/stitcher/sports/football/college-football/events/401404049.png?templateId=espn.com.share.1"
+  }
+]

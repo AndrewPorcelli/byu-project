@@ -1,10 +1,9 @@
 // need to put the basic functionality of the axios requests
 
 //Elements
-const findTicketBtn = document.querySelector('.find-tickets-btn');
-const ticketModal = document.querySelector('.ticket-window');
 const addTickets = document.querySelector('.add-tickets');
 const scheduleContainer = document.getElementById('schedule-container');
+const b = document.querySelector('.added-tickets');
 
 //baseURL
 const baseURL = `http://localhost:4000/api/schedule`;
@@ -17,15 +16,10 @@ const getSchedule = () => axios.get(baseURL).then(getTicketsCB);
 
 //Functions
 
-function getTicketsWindow() {
-  ticketModal.classList.toggle('hidden');
-  console.log('click');
-}
-
 function createTicketSchedule(schedule) {
   const ticketScheduleCard = document.createElement('div');
 
-  ticketScheduleCard.innerHTML = `<h2 id="byu-schedule">BYU's upcoming schedule</h2>
+  ticketScheduleCard.innerHTML = `
     <img id="byu-vs" src="${schedule.imageURL}"/>
     <h3 id="schedule-game">${schedule.game}</h3>
     <p id="schedule-time">${schedule.time}</p>
@@ -33,9 +27,14 @@ function createTicketSchedule(schedule) {
     <input type="number" />
     <button onclick="getTicketAmount(${schedule.id}, 'plus')">+</button>
     <br/>
-    <button id="add-tickets">Add Tickets Now</button>`;
+    <button id="add-tickets-${schedule.id}">Add Tickets Now</button>`;
 
   scheduleContainer.appendChild(ticketScheduleCard);
+  let addedTicketsBtn = document.getElementById(`add-tickets-${schedule.id}`);
+
+  addedTicketsBtn.addEventListener('click', function () {
+    b.classList.remove('hidden');
+  });
 }
 
 function displaySchedule(arr) {
@@ -46,7 +45,5 @@ function displaySchedule(arr) {
 }
 
 //Event listeners
-
-// findTicketBtn.addEventListener('click', getTicketsWindow);
 
 getSchedule();

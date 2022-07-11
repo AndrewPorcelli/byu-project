@@ -9,12 +9,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const { getSchedule, addTickets } = require('./controller');
+const { getSchedule, createTicket, getTickets } = require('./controller');
 
 // Endpoints
 
 app.get('/api/schedule', getSchedule);
-app.post('/api/schedule', addTickets);
+app.get('/api/schedule', getTickets)
+app.post('/api/schedule', createTicket);
 
 
 // ----------------- listening

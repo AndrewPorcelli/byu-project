@@ -2,7 +2,9 @@
 // for ticket page, use a hidden class in the html that i will create on the index.html and then once clicked, just unhide.
 const schedule = require('./db.json');
 const tickets = require('./tickets.json');
+const eats = require('./eatsdb.json');
 
+let eatsID = 4;
 let globalID = 1;
 
 //Functions
@@ -12,11 +14,29 @@ module.exports = {
   getSchedule: (req, res) => {
     res.status(200).send(schedule);
   },
+  getEats: (req, res) => {
+    res.status(200).send(eats);
+  },
+  createEats: (req, res) => {
+    const { name, location, imgURL, linkURL } = req.body;
+    let newEats = {
+      name,
+      location,
+      imgURL,
+      linkURL,
+      id: eatsID,
+    };
+    eats.push(newEats);
+    eatsID++;
+    res.status(200).send(eats);
+  },
 
   createTicket: (req, res) => {
+    console.log(req.body);
+    const { id } = req.params;
     const { value } = req.body;
     let createdTicket = {
-      id: globalID,
+      id,
 
       value: +value,
     };
@@ -25,6 +45,7 @@ module.exports = {
     globalID++;
   },
   getTickets: (req, res) => {
+    console.log();
     res.status(200).send(tickets);
   },
 };

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Angelica's",
+    "location": "St. George, UT",
+    "linkURL": "https://www.angelicasmexicangrill.com/",
+    "imageURL": "https://saintgeorgewellness.com/wp-content/uploads/2018/02/IMG_0915-1024x768.jpg"
+  },
+  {
+    "id": 2,
+    "name": "DP Cheesesteaks",
+    "location": "Provo, UT",
+    "linkURL": "https://www.dpcheesesteaks.com/",
+    "imageURL": "https://www.dpcheesesteaks.com/uploads/b/5fbb1ff074f3590db41f48796d7e49b565b1d763bc56c78e551a6569cfcae81a/provostorefront_1642098343.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chom Burger",
+    "location": "Provo, UT",
+    "linkURL": "https://www.chomburger.com/",
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUoX75FVC4CvCobpIyO4g1WehcYtQ9HUdJ1g&usqp=CAU"
+  }
+]

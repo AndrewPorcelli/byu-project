@@ -15,6 +15,7 @@ const {
   getTickets,
   getEats,
   createEats,
+  deleteEats,
 } = require('./controller');
 
 // Endpoints
@@ -23,6 +24,7 @@ app.get('/api/schedule', getSchedule);
 // app.get('/api/schedule', getTickets)
 app.get('/api/eats', getEats);
 app.post('/api/eats', createEats);
+app.delete('/api/eats/:id', deleteEats);
 app.post('/api/schedule', createTicket);
 
 const port = process.env.PORT || 4000;

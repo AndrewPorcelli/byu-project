@@ -30,6 +30,11 @@ module.exports = {
     eatsID++;
     res.status(200).send(eats);
   },
+  deleteEats: (req, res) => {
+    let index = eats.findIndex((elem) => elem.id === +req.params.id);
+    eats.splice(index, 1);
+    res.status(200).send(eats);
+  },
 
   createTicket: (req, res) => {
     console.log(req.body);

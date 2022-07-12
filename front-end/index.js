@@ -28,6 +28,8 @@ const ticketsCB = ({ data: tickets }) => displayTickets(tickets);
 const getEats = () => axios.get(`${baseURL}/eats`).then(getEatsCB);
 const createEats = (body) =>
   axios.post(`${baseURL}/eats`, body).then(getEatsCB);
+const deleteEats = (id) =>
+  axios.delete(`${baseURL}/eats/${id}`).then(getEatsCB);
 
 const getSchedule = () => axios.get(`${baseURL}/schedule`).then(getTicketsCB);
 const getTickets = () => axios.get(baseURL).then(ticketsCB);
@@ -68,6 +70,7 @@ function createEatsCard(eats) {
     <h3 id="eats-id">${eats.name}</h3>
     <h3 id="eats-location">${eats.location}</h3>
     <a href="${eats.linkURL}" target=_"blank">${eats.name} Link</a>
+    <button onclick="deleteEats(${eats.id})">Delete</button>
     `;
 
   eatsContainer.appendChild(eatsCard);

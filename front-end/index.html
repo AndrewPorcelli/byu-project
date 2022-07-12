@@ -9,34 +9,41 @@
   </head>
   <body>
     <div>
-      <div class="headers-container">
-        <div class="latest-news">
-          <button>Latest News</button>
-        </div>
-        <div class="gameday-eats">
-          <button>Gameday Eats</button>
-        </div>
-        <div class="article-links">
-          <button>Article Links</button>
-        </div>
-        <div class="byu-logo">
-          <img
-            src="https://deseret.brightspotcdn.com/dims4/default/d5af3a3/2147483647/strip/true/crop/1200x685+0+57/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FmNhhN7hiXE8CjtLswFvKX3dNqPs%3D%2F0x0%3A1200x800%2F1200x800%2Ffilters%3Afocal%28600x400%3A601x401%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F18554706%2F1614164.jpg"
-            alt="BYU logo"
-          />
-        </div>
-        <div class="next-game">
-          <button>Next Game</button>
-        </div>
-        <div>
-          <a href="./tickets.html">
-            <button class="find-tickets-btn">Find Tickets</button>
-          </a>
+      <div class="top-bar">
+        <div class="headers-container">
+          <div class="latest-news">
+            <button class="headers">Latest News</button>
+          </div>
+          <div id="gameday-eats">
+            <button class="headers">Gameday Eats</button>
+          </div>
+          <div class="article-links">
+            <button class="headers">Article Links</button>
+          </div>
+          <div class="byu-logo">
+            <img
+              src="https://deseret.brightspotcdn.com/dims4/default/d5af3a3/2147483647/strip/true/crop/1200x685+0+57/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FmNhhN7hiXE8CjtLswFvKX3dNqPs%3D%2F0x0%3A1200x800%2F1200x800%2Ffilters%3Afocal%28600x400%3A601x401%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F18554706%2F1614164.jpg"
+              alt="BYU logo"
+            />
+          </div>
+          <div class="next-game">
+            <button class="headers">Next Game</button>
+          </div>
+          <div>
+            <a href="./tickets.html">
+              <button class="find-tickets-btn headers">Find Tickets</button>
+            </a>
+          </div>
         </div>
       </div>
       <div class="site">
         <div class="home-page">
-          <div class="highlight-video"></div>
+          <div class="highlight-img">
+            <img id="main-photo"
+              src="https://sportshub.cbsistatic.com/i/r/2022/06/12/ec1894b6-8971-4260-a1e3-e9f9bfb0ca84/thumbnail/1200x675/7a5c5734a37ea9c81b94b0fc0891b377/byu-hall.jpg"
+              alt="BYU vs USC 2021"
+            />
+          </div>
         </div>
       </div>
       <div class="gameday-eats">
@@ -50,7 +57,7 @@
             love and cheer on our cougars and the community!
           </p>
           <section class="our-eats-container"></section>
-        </div>
+        </div class="our-eats-div">
         <form id="suggestions">
           What food places would you suggest on gameday?
           <br />

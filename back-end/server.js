@@ -25,5 +25,9 @@ app.get('/api/eats', getEats);
 app.post('/api/eats', createEats);
 app.post('/api/schedule', createTicket);
 
+const port = process.env.PORT || 4000;
+
 // ----------------- listening
-app.listen(4000, console.log('Boogying on port 4000'));
+app.listen(port, () => {
+  console.log(`Boogying on port ${port}`);
+});

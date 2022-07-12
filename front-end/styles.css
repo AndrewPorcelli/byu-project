@@ -55,6 +55,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 .why-eats {
@@ -64,7 +65,6 @@ img {
   margin-top: 20px;
   border-radius: 12px;
   padding: 10px;
-  
 }
 
 .our-eats-container {
@@ -74,6 +74,9 @@ img {
   margin: auto;
   margin-top: 20px;
   padding-bottom: 20px;
+  flex-wrap: wrap;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .our-eats-div {

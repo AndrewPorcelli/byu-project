@@ -49,11 +49,12 @@ img {
 
 .gameday-eats {
   width: 100%;
-  background-color: #cecece;
+  background-color: #0f1a20;
   margin-top: -20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .why-eats {
@@ -70,14 +71,46 @@ img {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
+  margin-top: 20px;
 }
 
 .our-eats-div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #266dd3;
+}
+
+#suggestions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
   
+}
+
+input {
+  width: 300px;
+}
+
+.gameday-eats-container {
+  margin-bottom: 50px;
+}
+
+.eats-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 #eats-img {
   width: 200px;
   height: 200px;
   
+}
+
+#add-sugg {
+  width: 120px;
+  border-radius: 12px;
+  margin-top: 10px;
 }

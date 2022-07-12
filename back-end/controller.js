@@ -18,11 +18,11 @@ module.exports = {
     res.status(200).send(eats);
   },
   createEats: (req, res) => {
-    const { name, location, imgURL, linkURL } = req.body;
+    const { name, location, imageURL, linkURL } = req.body;
     let newEats = {
       name,
       location,
-      imgURL,
+      imageURL,
       linkURL,
       id: eatsID,
     };

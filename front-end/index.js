@@ -26,7 +26,8 @@ const ticketsCB = ({ data: tickets }) => displayTickets(tickets);
 
 //axios paths
 const getEats = () => axios.get(`${baseURL}/eats`).then(getEatsCB);
-const createEats = (body) => axios.post(`${baseURL}/eats`, body).then(getEatsCB);
+const createEats = (body) =>
+  axios.post(`${baseURL}/eats`, body).then(getEatsCB);
 
 const getSchedule = () => axios.get(`${baseURL}/schedule`).then(getTicketsCB);
 const getTickets = () => axios.get(baseURL).then(ticketsCB);
@@ -63,7 +64,7 @@ function createEatsCard(eats) {
   const eatsCard = document.createElement('div');
 
   eatsCard.innerHTML = `
-    <img id="eats-img" src="${eats.imageURL}"/>
+    <img id="eats-img" src="${eats.imageURL}" alt="${eats.name} photo"/>
     <h3 id="eats-id">${eats.name}</h3>
     <h3 id="eats-location">${eats.location}</h3>
     <a href="${eats.linkURL}" target=_"blank">${eats.name} Link</a>

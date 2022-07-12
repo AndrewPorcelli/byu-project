@@ -64,6 +64,7 @@ img {
   margin-top: 20px;
   border-radius: 12px;
   padding: 10px;
+  
 }
 
 .our-eats-container {
@@ -72,6 +73,7 @@ img {
   justify-content: space-around;
   margin: auto;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .our-eats-div {
@@ -86,7 +88,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 95%;
-  
 }
 
 input {
@@ -101,12 +102,12 @@ input {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+  padding-left: 10px;
 }
 
 #eats-img {
   width: 200px;
   height: 200px;
-  
 }
 
 #add-sugg {

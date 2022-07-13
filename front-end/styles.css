@@ -51,6 +51,11 @@ img {
   border-color: #0f1a20;
 }
 
+.headers:hover {
+  background-color: #16407c;
+  
+}
+
 .gameday-eats {
   width: 100%;
   background-color: #0f1a20;

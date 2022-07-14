@@ -1,7 +1,4 @@
-// need to put the basic functionality of the axios requests
-
 //Elements
-
 //gamedayEats elements
 
 const eatsContainer = document.querySelector('.our-eats-container');
@@ -17,27 +14,24 @@ const ticketsContainer = document.getElementById('added-tickets-container');
 const baseURL = `http://localhost:4000/api`;
 
 //axios calls
-
-//callvbacks
+//callbacks
 const getEatsCB = ({ data: eats }) => displayEats(eats);
-
 const getTicketsCB = ({ data: schedule }) => displaySchedule(schedule);
 const ticketsCB = ({ data: tickets }) => displayTickets(tickets);
 
 //axios paths
+//eats paths
 const getEats = () => axios.get(`${baseURL}/eats`).then(getEatsCB);
 const createEats = (body) =>
   axios.post(`${baseURL}/eats`, body).then(getEatsCB);
 const deleteEats = (id) =>
   axios.delete(`${baseURL}/eats/${id}`).then(getEatsCB);
-
+//schedule and tickets paths
 const getSchedule = () => axios.get(`${baseURL}/schedule`).then(getTicketsCB);
 const getTickets = () => axios.get(baseURL).then(ticketsCB);
-
 const createTicket = (body) => axios.post(baseURL, body).then(ticketsCB);
 
 //Functions
-
 //Gameday eats functions
 
 function submitHandler(e) {
@@ -106,49 +100,6 @@ function displaySchedule(arr) {
   scheduleContainer.innerHTML = ``;
   for (let i = 0; i < arr.length; i++) {
     createTicketSchedule(arr[i]);
-  }
-}
-
-function addTicketsToProfile(e, schedule) {
-  // e.preventDefault()
-
-  let input = document.querySelector('.input-number');
-  //   let gameSelected = document.getElementById('schedule-game');
-  //   let timeOfGame = document.getElementById('schedule-time');
-  //   let gameIMG = document.getElementById('byu-vs')
-  let addedTicketsBtn = document.getElementById(`add-tickets-${schedule.id}`);
-  console.log(addedTicketsBtn);
-
-  let bodyObj = {
-    input: input.value,
-    //   gameSelected,
-    //   timeOfGame,
-    //   gameIMG,
-  };
-
-  let addedTicketCard = document.createElement('div');
-
-  addedTicketCard.innerHTML = `You have added ${input} tickets
-  
-  `;
-
-  ticketsContainer.appendChild(addedTicketCard);
-
-  addedTicketsBtn.addEventListener('click', createTicket(bodyObj));
-}
-
-// function aTPCB(schedule) {
-//   let addedTicketCard = document.createElement('div');
-
-//   addedTicketCard.innerHTML = `You have added
-
-//     `;
-// }
-
-function displayTickets(arr) {
-  ticketsContainer.innerHTML = ``;
-  for (let i = 0; i < arr.length; i++) {
-    addTicketsToProfile(arr[i]);
   }
 }
 
